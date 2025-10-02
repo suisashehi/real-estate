@@ -1,0 +1,11 @@
+import React from 'react'
+
+const hero = () => {
+  return (
+    <section className="hero-wrapper">
+        <div className="paddings innerWidth flexCenter hero-container"></div>
+    </section>
+  )
+}
+
+export default hero
