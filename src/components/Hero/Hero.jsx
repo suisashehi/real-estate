@@ -6,8 +6,9 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
-        <div className="hero-left">
+        <div className="flexColStart hero-left">
           <div className="hero-title">
+            <div className="orange-circle"/>
             <h1>
               Discover <br /> Most Suitable <br /> Property{" "}
             </h1>
