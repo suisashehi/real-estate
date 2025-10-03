@@ -1,11 +1,17 @@
 import Header from './components/Header/Header'
 import Hero from "./components/Hero/Hero.jsx";
+import './App.css'
 
 function App() {
   return (
     <div className="App">
+      <div>
+        <div className="white-gradient"/>
+
       <Header />
-      <Hero />      
+      <Hero />  
+      </div>
+    
       
     </div>
   );
