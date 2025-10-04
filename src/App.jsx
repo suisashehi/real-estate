@@ -2,6 +2,7 @@ import Header from './components/Header/Header'
 import Hero from "./components/Hero/Hero.jsx";
 import './App.css'
 import Companies from './components/Companies/Companies.jsx';
+import Residencies from './components/Residencies/Residencies.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </div>
     
       <Companies />
+      <Residencies />
       
     </div>
   );
