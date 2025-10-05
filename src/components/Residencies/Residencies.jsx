@@ -42,9 +42,9 @@ const SliderButtons = () => {
   const swiper = useSwiper();
 
   return (
-    <div className="r-button">
-      <button>&lt;</button>
-      <button>&gt;</button>
+    <div className="r-buttons">
+      <button onClick={()=>swiper.slidePrev()}>&lt;</button>
+      <button onClick={()=>swiper.slideNext()}>&gt;</button>
     </div>
   );
 };
