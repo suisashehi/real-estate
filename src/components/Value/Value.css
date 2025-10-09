@@ -1,50 +1,76 @@
-.v-container .image-container{
-    border: 8px solid rgb(232 232 232 / 93%);
+.v-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
 }
 
-.v-container>div{
-    flex:1
+.v-container > div {
+  flex: 1;
 }
 
-.v-right{
-    gap: 0.5rem;
-
+.v-right {
+  gap: 0.5rem;
 }
 
-.accordion{
-    margin-top: 2rem;
-    border: none;
+.accordion {
+  margin-top: 2rem;
+  border: none;
+  width: 100%;
 }
 
-.accordionItem{
-    background: white;
-    border: 0.8px solid rgba(128, 128, 128, 0.143);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-
+/* Normal card */
+.accordionItem {
+  background: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
- .accordionButton{
-     background: white;
-     padding: 1rem;
-     width: 100%;
-     justify-content: space-between;
-     cursor: pointer;
+/* Active (expanded) card */
+.accordionItem.expanded {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
 
- }
+.accordionButton {
+  background: #fff;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
- .icon{
-    padding: 10px;
-    background: #eeeeff;
-    border-radius: 5px; 
- }
+.icon {
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
 
- .icon svg{
-    fill: var(--blue);
- }
+.icon svg {
+  fill: var(--blue);
+}
 
- .accordionButton .primaryText{
-    font-size: 1.1rem;
-    
- }
+.arrowIcon {
+  transition: transform 0.3s ease;
+}
+
+.accordionItem.expanded .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.accordionButton .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.secondaryText {
+  color: gray;
+  font-size: 0.95rem;
+  padding: 0 1rem 1rem 1rem;
+  line-height: 1.6;
+}
