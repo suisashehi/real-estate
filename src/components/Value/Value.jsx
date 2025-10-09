@@ -39,10 +39,21 @@ const Value = () => {
                        {
                           data.map((item, i)=>{
                             return(
-                                <AccordionItem className="accordionItem">
+                                <AccordionItem className="accordionItem" key={i} uuid={i}>
                                 <AccordionItemHeading>
-                                    
+                                    <AccordionItemButton>
+                                        <div className="flexCenter icon">
+                                            {item.icon}
+                                        </div>
+                                        <span className="primaryText">{item.heading}</span>
+                                        <div className="flexCenter icon">
+                                            <MdOutlineArrowDropDown size={20}/>
+                                        </div>
+                                    </AccordionItemButton>
                                 </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p className="secondaryText">{item.detail}</p>
+                                </AccordionItemPanel>
                                        
 
                                 </AccordionItem>
