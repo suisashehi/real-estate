@@ -10,6 +10,7 @@ import{
 import 'react-accessible-accordion/dist/fancy-example.css';
 import {MdOutlineArrowDropDown} from 'react-icons/md'
 import './Value.css'
+import data from '../../utils/accordion'
 const Value = () => {
   return (
     <section className="v-wrapper">
@@ -29,6 +30,27 @@ const Value = () => {
                     We always ready to help by providing the best services for you. 
                     <br/>
                     We believe a good place to live can make your life better</span>
+
+                    <Accordion
+                    allowMultipleExpanded={false}
+                    preExpanded={[0]}
+                    className="accordion"
+                    >
+                       {
+                          data.map((item, i)=>{
+                            return(
+                                <AccordionItem className="accordionItem">
+                                <AccordionItemHeading>
+                                    
+                                </AccordionItemHeading>
+                                       
+
+                                </AccordionItem>
+                            );
+                          })
+                       } 
+                        
+                    </Accordion>
             </div>
         </div>    
     </section>
