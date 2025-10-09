@@ -25,3 +25,26 @@
 
 }
 
+ .accordionButton{
+     background: white;
+     padding: 1rem;
+     width: 100%;
+     justify-content: space-between;
+     cursor: pointer;
+
+ }
+
+ .icon{
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px; 
+ }
+
+ .icon svg{
+    fill: var(--blue);
+ }
+
+ .accordionButton .primaryText{
+    font-size: 1.1rem;
+    
+ }
