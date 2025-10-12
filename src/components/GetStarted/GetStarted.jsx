@@ -11,6 +11,9 @@ const GetStarted = () => {
             <br />
             Find your residence soon
           </span>
+          <button className="button">
+            <a href="mailto:someone@gmail.com">Get Started</a>
+          </button>
         </div>
       </div>
     </section>
