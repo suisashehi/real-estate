@@ -23,7 +23,7 @@ const Footer = () => {
             <span>Property</span>
             <span>Services</span>
             <span>Products</span>
-            <span>About uss</span>
+            <span>About us</span>
           </div>
         </div>
       </div>
